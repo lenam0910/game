@@ -58,15 +58,15 @@ const roles = [
     }
 ];
 
-// Placeholder for images (since only 2 were successfully generated via AI)
+// Placeholder for images (since all were successfully generated via AI!)
 // We use fallback gradients if images don't load.
 const FALLBACK_BACKGROUNDS = {
-    patriot: 'url("https://images.unsplash.com/photo-1614088667104-586bce837dca?auto=format&fit=crop&w=400&q=80")',
-    spy: 'url("https://images.unsplash.com/photo-1542478548-ced7f830d17d?auto=format&fit=crop&w=400&q=80")',
-    seer: 'url("https://images.unsplash.com/photo-1596700078028-eb827a5fcfa5?auto=format&fit=crop&w=400&q=80")',
-    bodyguard: 'url("https://images.unsplash.com/photo-1633519897184-eefc37da6262?auto=format&fit=crop&w=400&q=80")',
-    medic: 'url("https://images.unsplash.com/photo-1584820927498-cafe8c1c9695?auto=format&fit=crop&w=400&q=80")',
-    hunter: 'url("https://images.unsplash.com/photo-1563212891-2364faacf911?auto=format&fit=crop&w=400&q=80")'
+    patriot: 'linear-gradient(135deg, #43a047, #1b5e20)',
+    spy: 'linear-gradient(135deg, #424242, #000000)',
+    seer: 'linear-gradient(135deg, #1e88e5, #0d47a1)',
+    bodyguard: 'linear-gradient(135deg, #ffb300, #ff6f00)',
+    medic: 'linear-gradient(135deg, #e53935, #b71c1c)',
+    hunter: 'linear-gradient(135deg, #7cb342, #33691e)'
 };
 
 // UI Elements
