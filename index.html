@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bình Minh Đỏ - Ma Sói Lịch Sử</title>
+    <meta name="description"
+        content="Trò chơi nhập vai ẩn danh lấy bối cảnh lịch sử. Bình Minh Đỏ chia phe Cách mạng và Mật thám, rèn luyện tư duy và phán đoán.">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="bg-overlay"></div>
+    <div class="particles"></div>
+
+    <div id="app">
+        <!-- Home Screen -->
+        <main id="home-screen" class="screen active">
+            <div class="hero">
+                <div class="star-icon">★</div>
+                <h1 class="title">Bình Minh Đỏ</h1>
+                <p class="subtitle">Mặt trận sương mù - Lịch sử chưa phơi bày.</p>
+                <div class="actions">
+                    <button id="btn-start" class="btn primary">
+                        <span class="btn-text">Nhận Vai Trò</span>
+                        <div class="shine"></div>
+                    </button>
+                    <button id="btn-rules" class="btn secondary">Xem Luật Chơi</button>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer class="footer">
+                <p>Một trải nghiệm lịch sử - Trò chơi nhập vai (Phiên bản số hóa)</p>
+            </footer>
+        </main>
+
+        <!-- Role Assignment Screen -->
+        <section id="role-screen" class="screen hidden">
+            <header class="role-header">
+                <h2 class="title-small">Vai Trò Của Bạn</h2>
+                <div class="progress-bar"></div>
+            </header>
+
+            <div class="card-container">
+                <div class="card" id="role-card">
+                    <div class="card-front">
+                        <div class="card-pattern"></div>
+                        <div class="front-content">
+                            <span class="card-logo">★</span>
+                            <p>Chạm để tiết lộ</p>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-image-wrapper">
+                            <img id="role-image" src="" alt="Role Image Face">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="card-details">
+                            <span id="role-faction" class="faction-badge">Phe</span>
+                            <h3 id="role-name">Tên Vai Trò</h3>
+                            <p id="role-desc">Mô tả chức năng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p id="instruction-text" class="instruction">Hãy giữ bí mật lá bài này!</p>
+            <div class="action-bottom">
+                <button id="btn-back" class="btn secondary fade-in hidden">Trở Về Trang Chủ</button>
+            </div>
+        </section>
+
+        <!-- Rules Modal -->
+        <div id="rules-modal" class="modal">
+            <div class="modal-content glass">
+                <button class="close-btn">&times;</button>
+                <h2>Luật Chơi Căn Bản</h2>
+                <p class="modal-intro">Trò chơi lấy bối cảnh đặc biệt thời kỳ Kháng chiến. Chia làm 2 phe chính:</p>
+                <div class="faction-summary">
+                    <div class="faction revolution">
+                        <h3>Phe Cách Mạng</h3>
+                        <p>Tìm ra kẻ thù trà trộn để bảo vệ Tổ quốc.</p>
+                    </div>
+                    <div class="faction spy">
+                        <h3>Phe Mật Thám</h3>
+                        <p>Thủ tiêu những người cách mạng vào ban đêm.</p>
+                    </div>
+                </div>
+
+                <h3>Các Chức Năng Cụ Thể</h3>
+                <div class="roles-list" id="roles-list-container">
+                    <!-- JavaScript sẽ gen nội dung vào đây -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
